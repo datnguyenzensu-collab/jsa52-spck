@@ -1,0 +1,184 @@
+.nav-link {
+    padding: 8px 20px;
+    border-radius: 50px;
+    color: #444 !important; /* Màu chữ xám đậm */
+    transition: all 0.3s ease;
+}
+
+.nav-link:hover {
+    background-color: #f0f0f2; /* Màu nền xám cực nhạt */
+    color: #000 !important;      /* Chữ đậm hơn khi hover */
+}
+.nav-link {
+    padding: 8px 20px;
+    border-radius: 50px;
+    color: #2c3e50 !important;
+    transition: all 0.3s ease;
+}
+
+.nav-link:hover {
+    background-color: #3498db; /* Màu xanh nước biển */
+    color: #ffffff !important;   /* Chữ trắng */
+    box-shadow: 0 4px 15px rgba(52, 152, 219, 0.3); /* Đổ bóng nhẹ cho sang */
+}
+.nav-link {
+    padding: 8px 20px;
+    border-radius: 50px;
+    color: #555 !important;
+    transition: all 0.4s ease;
+}
+
+.nav-link:hover {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); /* Tím xanh sang trọng */
+    color: #ffffff !important;
+    transform: translateY(-2px); /* Nhích nhẹ lên trên */
+}
+/* Tổng thể font chữ */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Navbar tinh tế hơn */
+.navbar {
+    border-bottom: 2px solid #ff6b00; /* Đường chỉ cam dưới menu */
+}
+
+/* Vo tròn các mục menu */
+.nav-link {
+    margin: 0 5px;
+    padding: 8px 18px !important;
+    border-radius: 50px;
+    transition: all 0.3s ease;
+}
+
+/* Hiệu ứng Hover cho menu thường */
+.nav-link:hover {
+    background-color: rgba(255, 107, 0, 0.1);
+    color: #ff6b00 !important;
+}
+
+
+
+@keyframes sparkle {
+    0% { opacity: 1; box-shadow: 0 0 5px #ff6b00; }
+    50% { opacity: 0.8; box-shadow: 0 0 20px #ff6b00; transform: scale(1.05); }
+    100% { opacity: 1; box-shadow: 0 0 5px #ff6b00; }
+}
+
+
+
+.btn-primary:hover {
+    background-color: #e66000 !important;
+    transform: translateY(-2px);
+}
+
+/* Hero Section - Làm cho rực rỡ hơn */
+.bg-light {
+    background: linear-gradient(180deg, #ffffff 0%, #f8f9fa 100%);
+}
+
+h1.display-4 {
+    color: #212529;
+    letter-spacing: -1px;
+}
+
+/* Card tính năng bo tròn và đổ bóng mịn */
+.card {
+    border: none;
+    border-radius: 20px;
+    transition: transform 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1) !important;
+}
+
+/* Carousel hình ảnh */
+.carousel-item img {
+    height: 450px;
+    object-fit: cover;
+    border-radius: 25px;
+}
+
+/* Footer */
+footer {
+    border-top: 3px solid #ff6b00;
+}
+.btn-hero {
+    /* Màu nền cam bóng rổ rực rỡ */
+    background: linear-gradient(45deg, #ff6b00, #ff8800);
+    color: white !important;
+    
+    /* Vo tròn hoàn hảo */
+    border-radius: 50px; 
+    
+    /* Kích thước và font chữ */
+    padding: 12px 40px;
+    font-weight: 700;
+    text-transform: uppercase; /* Chữ viết hoa cho mạnh mẽ */
+    letter-spacing: 1px;
+    
+    /* Loại bỏ viền mặc định */
+    border: none;
+    
+    /* Hiệu ứng chuyển động */
+    transition: all 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+    box-shadow: 0 4px 15px rgba(255, 107, 0, 0.4);
+}
+
+.btn-hero:hover {
+    /* Khi di chuột vào: Nút to hơn một chút và sáng lên */
+    background: linear-gradient(45deg, #ff8800, #ff6b00);
+    transform: translateY(-3px) scale(1.05);
+    box-shadow: 0 8px 25px rgba(255, 107, 0, 0.6);
+    color: #fff;
+}
+
+.btn-hero:active {
+    /* Hiệu ứng khi nhấn nhấn nút */
+    transform: translateY(1px);
+}
+.btn-orange {
+    background-color: #ff6b00;
+    color: white;
+    border-radius: 50px;
+    padding: 8px 20px;
+    font-weight: bold;
+    border: none;
+    transition: 0.3s;
+}
+.btn-orange:hover {
+    background-color: #e66000;
+    transform: scale(1.05);
+}
+/* Thu nhỏ ảnh sản phẩm và làm đều khung */
+.product-card {
+    transition: transform 0.3s ease;
+    border-radius: 20px !important;
+}
+
+.product-card:hover {
+    transform: translateY(-5px);
+}
+
+.product-card img {
+    height: 180px; /* Độ cao cố định cho ảnh sản phẩm */
+    object-fit: contain; /* Đảm bảo ảnh giày không bị méo */
+    background-color: #f8f9fa;
+}
+
+/* Tùy chỉnh nút mua hàng */
+.btn-orange {
+    background: #ff6b00;
+    color: white;
+    border-radius: 50px;
+    border: none;
+    padding: 8px 15px;
+    font-weight: 600;
+}
+
+.btn-orange:hover {
+    background: #e66000;
+    color: white;
+}
