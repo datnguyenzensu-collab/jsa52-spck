@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Đăng nhập & Đăng ký | SportStore</title>
+    <link rel="stylesheet" href="login-style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <div class="auth-container">
+        <div class="forms-wrapper">
+            
+            <div class="form-box login" id="loginForm">
+                <h2>CHÀO MỪNG TRỞ LẠI</h2>
+                <p>Nhập thông tin để tiếp tục tập luyện!</p>
+                
+                <form id="login-form-element">
+                    <div class="input-field">
+                        <i class="fas fa-envelope"></i>
+                        <input type="email" id="login-email" placeholder="Email" required>
+                    </div>
+                    <div class="input-field">
+                        <i class="fas fa-lock"></i>
+                        <input type="password" id="login-pass" placeholder="Mật khẩu" required>
+                    </div>
+                    <span id="login-error" style="color: #ff4757; display: none; font-size: 13px; margin-bottom: 10px;"></span>
+                    <a href="#" class="forgot-pass">Quên mật khẩu?</a>
+                    <button type="submit" class="auth-btn">ĐĂNG NHẬP</button>
+                </form>
+                
+                <p class="switch-text">Bạn mới đến? <a href="javascript:void(0)" onclick="toggleForm()">Tham gia ngay</a></p>
+            </div>
+
+            <div class="form-box register" id="registerForm" style="display: none;">
+                <h2>GIA NHẬP ĐỘI NGŨ</h2>
+                <p>Tạo tài khoản để nhận ưu đãi thể thao độc quyền.</p>
+                
+                <form id="register-form-element">
+                    <div class="input-field">
+                        <i class="fas fa-user"></i>
+                        <input type="text" id="reg-name" placeholder="Họ và tên" required>
+                    </div>
+                    <div class="input-field">
+                        <i class="fas fa-envelope"></i>
+                        <input type="email" id="reg-email" placeholder="Email" required>
+                    </div>
+                    <div class="input-field">
+                        <i class="fas fa-lock"></i>
+                        <input type="password" id="reg-pass" placeholder="Mật khẩu" required>
+                    </div>
+                    <span id="reg-error" style="color: #ff4757; display: none; font-size: 13px; margin-bottom: 10px;"></span>
+                    <button type="submit" class="auth-btn">ĐĂNG KÝ</button>
+                </form>
+                
+                <p class="switch-text">Đã có tài khoản? <a href="javascript:void(0)" onclick="toggleForm()">Đăng nhập</a></p>
+            </div>
+        </div>
+
+        <div class="auth-image">
+            <div class="overlay-text">
+                <h3>SỨC MẠNH TRONG TỪNG BƯỚC CHẠY</h3>
+                <p>Hơn 1000+ sản phẩm chính hãng đang chờ bạn.</p>
+            </div>
+        </div>
+    </div>
+
+    <script src="auth-script.js"></script>
+</body>
+</html>
