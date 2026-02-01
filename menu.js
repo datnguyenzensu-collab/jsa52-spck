@@ -66,3 +66,11 @@ function checkout() {
 
 // Chạy lần đầu khi load trang
 document.addEventListener('DOMContentLoaded', renderCart);
+function checkout() {
+    if (cart.length === 0) {
+        alert("Giỏ hàng của bạn đang trống!");
+        return;
+    }
+    // Chuyển hướng sang trang thanh toán
+    window.location.href = 'thanh toán.html';
+}
